@@ -1,0 +1,24 @@
+.header__zebra {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+}
+
+.navbar__zebra i {
+  color: antiquewhite;
+  margin: 0 0 0 0;
+}
+
+
+@media (min-width: 1024px) {
+
+  .header__zebra {
+    justify-content: space-between;
+    width: 100%;
+}
+  
+  .navbar__zebra ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
