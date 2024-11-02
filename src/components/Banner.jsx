@@ -6,8 +6,9 @@ const Banner = () => {
     <div className="banner-container">
       <video className="banner-video" src="../public/video/ZebraLagoEventos.mp4" autoPlay muted loop></video>
       <div className="banner-overlay">
-        <h1>Zebra Lago Eventos</h1>
-        <p>Tu descripción aquí</p>
+        
+        <p>Vos lo soñas... Nosotros lo hacemos realidad</p>
+        <button>Contactanos</button>
       </div>
     </div>
   );

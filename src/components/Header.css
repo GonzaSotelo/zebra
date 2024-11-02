@@ -3,10 +3,15 @@
   z-index: 100;
   display: flex;
 }
+.container__logo {
+  color: #ffffff;
+  padding: 1vw;
+}
 
-.navbar__zebra i {
+.navbar__zebra a {
   color: antiquewhite;
-  margin: 0 0 0 0;
+  text-decoration: none;
+
 }
 
 
@@ -20,5 +25,10 @@
   .navbar__zebra ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+  .navbar__zebra li {
+    padding: 1vw;
+
   }
 }
