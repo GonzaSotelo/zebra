@@ -1,34 +1,94 @@
 .header__zebra {
   position: fixed;
-  z-index: 100;
+  top: 0;
+  width: 100%;
   display: flex;
-}
-.container__logo {
-  color: #ffffff;
+  align-items: center;
   padding: 1vw;
+  background-color: transparent; /* Fondo transparente al inicio */
+  transition: background-color 0.8s ease; /* Suavizar la transición */
+  z-index: 100;
 }
-
+.header__zebra.scrolled {
+  background-color: #2e2e2ec9; /* Color de fondo cuando se hace scroll */
+}
 .navbar__zebra a {
   color: antiquewhite;
   text-decoration: none;
+}
 
+.container__logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  flex: 1; /* Empuja el logo hacia la izquierda */
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+  color: antiquewhite;
+  cursor: pointer;
+  display: block; /* Mostrar el ícono siempre en vista móvil */
+}
+
+/* Ocultar el menú en vista móvil */
+.menu-desactive {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  backdrop-filter: blur(4px); /* Efecto de difuminado */
+  z-index: 90; /* Colocarlo detrás del menú */
+}
+
+.menu-active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 90%;
+  height: 85vh;
+  background-color: #656565ab;
+  padding: 1vw;
+  border-radius: 10px 0 10px 10px;
+}
+
+.menu-active li {
+  padding: 1vw 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 
+/* Mostrar el menú completo en dispositivos grandes */
 @media (min-width: 1024px) {
-
   .header__zebra {
     justify-content: space-between;
-    width: 100%;
-}
-  
+  }
+
+  .fa-bars {
+    display: none; /* Ocultar el ícono en pantallas grandes */
+  }
+
+  .navbar__zebra {
+    display: flex;
+  }
+
   .navbar__zebra ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    gap: 2vw; /* Espacio entre los elementos */
   }
+
   .navbar__zebra li {
     padding: 1vw;
-
   }
 }
