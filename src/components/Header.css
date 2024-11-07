@@ -4,10 +4,14 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1vw;
+  padding: 2vw 4vw;
   background-color: transparent; /* Fondo transparente al inicio */
   transition: background-color 0.8s ease; /* Suavizar la transición */
   z-index: 100;
+}
+.container__logo img {
+  width: 20vw;
+ /* margin: 4vw 0vw 0vw 4vw;*/
 }
 .header__zebra.scrolled {
   background-color: #2e2e2ec9; /* Color de fondo cuando se hace scroll */

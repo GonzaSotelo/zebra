@@ -21,7 +21,9 @@ export const Header = () => {
   return (
     <>
       <header className={`header__zebra ${isScrolled ? 'scrolled' : ''}`}>
-        <div className='container__logo'>Logo</div>
+        <div className='container__logo'>
+          <img src="/public/img/logo-blanco.png" alt="" />
+        </div>
         <nav className='navbar__zebra'>
           <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
           <ul className={isMenuOpen ? 'menu-active' : 'menu-desactive'}>
