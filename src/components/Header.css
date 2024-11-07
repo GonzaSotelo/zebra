@@ -83,6 +83,9 @@
     width: 80%;
     height: 75vh;
   }
+  .container__logo img {
+    width: 15vw;
+  }
 
 }
 
@@ -102,6 +105,7 @@
 
   .navbar__zebra {
     display: flex;
+    margin-top: 1vw;
   }
 
   .navbar__zebra ul {
@@ -112,6 +116,15 @@
   .navbar__zebra li {
     padding: 1vw;
   }
+  .container__logo img {
+    width: 8vw;
+  }
+  .header__zebra.scrolled {
+    height: 8vh;
+  }
+}
+.header__zebra {
+  height: 8vh;
 }
 
 
