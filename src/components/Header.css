@@ -73,6 +73,23 @@
 }
 
 
+
+
+@media (min-width: 768px) {
+
+  .menu-active {
+    top: 97%;
+    right: 10%;
+    width: 80%;
+    height: 75vh;
+  }
+
+}
+
+
+
+
+
 /* Mostrar el menú completo en dispositivos grandes */
 @media (min-width: 1024px) {
   .header__zebra {
@@ -95,4 +112,12 @@
   .navbar__zebra li {
     padding: 1vw;
   }
+}
+
+
+
+@media (min-width: 1250px) {
+
+
+
 }
