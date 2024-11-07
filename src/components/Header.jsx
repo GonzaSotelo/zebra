@@ -22,7 +22,7 @@ export const Header = () => {
     <>
       <header className={`header__zebra ${isScrolled ? 'scrolled' : ''}`}>
         <div className='container__logo'>
-          <img src="/public/img/logo-blanco.png" alt="" />
+          <img src="public/img/logo-blanco.png" alt="" />
         </div>
         <nav className='navbar__zebra'>
           <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
